@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEEZYSIKK</title>
+    <link rel="stylesheet" href="./css/simple.css">
+    <link rel="stylesheet" href="./css/deliver.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./imgs/Logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapperProduct" class="hidden">
+        <div class="cardProduct">
+            <div class="image">
+                <img id="productImg" src="./imgs/CovidLogoHoodie.png"/>
+            </div>
+            <div id="wrapperId" class="infoWrapper">
+                <div class="titles">
+                    <label id="productName" class="title">WW CAPSULE HOODIE</label>
+                    <label id="productPrice" class="price">4 600₽</label>
+                </div>
+                <div class="productInfo">
+                    <label class="name">Размеры:</label>
+                    <div class="sizes">
+                        <button class="size">XS</button>
+                        <button class="size">S</button>
+                        <button class="size active">M</button>
+                        <button class="size">L</button>
+                        <button class="size">XL</button>
+                    </div> 
+                    <label class="name">Описание:</label>
+                    <div class="desc">
+                        <div>100% хлопок</div>
+                        <div>Прямая печать</div>
+                    </div> 
+                </div>
+                <button id="addProduct">Добавить в корзину</button>
+            </div>
+            <button id="hideProductCard">
+                <img src="./imgs/Cross.png"/>
+            </button>
+        </div>
+    </div>
+    <div id="bucketWindow" class="bucket hidden">
+        <label class="title">Корзина</label>
+        <div class="productsList">
+            <div class="types">
+                <label class="type first">Название:</label>
+                <label class="type second">Размер:</label>
+                <label class="type third">Арт:</label>
+                <label class="type fourth">Кол - во:</label>
+                <label class="type fifth">Сумма:</label>
+            </div>
+            <div id="items"></div>
+            <div class="bucketInfo">
+                <div id="bucketCount">Всего товаров в корзине: <span id="itemsCountNumber" class="number">5</span></div>
+                <div id="bucketSum">Общая сумма: <span id="itemsSumNumber" class="number">16 160₽</span></div>
+            </div>
+           <div class="buttonsControls">
+                <button class="getPurchase">Перейти к оформлению заказа</button>
+                <button id="continuePurchase">Продолжить покупки</button>
+           </div>
+        </div>
+    </div>
+    <a href="simple.html" id="logo" class="logo">
+        <img src="./imgs/Logo.png"/>
+    </ф>
+    <div id="bucketBtn">
+        <img src="./imgs/Bucket.png"/>
+        <div id="menuBucketItemsCount">0</div>
+    </div>
+    <div class="wrapper">
+        <header>
+            <a class="pmenu" href="index.html">О нас</a>
+            <a class="pmenu" href="#">Контакты</a>
+            <a class="pmenu" href="#">Доставка</a>
+            <div class="menu">
+                <label id="siteStyle">
+                    Внешний вид магазина
+                </label>
+                <div id="stylesMenu">
+                    <a class="styleOption">Строго и со вкусом</a>
+                    <a class="styleOption">Коротко и по делу</a>
+                    <a class="styleOption">Версия для слабовидящих</a>
+                </div>
+            </div>
+        </header>
+        <label class="deliverTitle">Информация о доставке и возврате товара</label>
+        <div class="deliverContent">
+            <p>Сколько стоит доставка?</p>
+            <label class="deliverText">
+                <div>Стоимость доставки варьируется от места доставки:</div>
+                <div>По России - 350₽</div>
+                <div>По миру - 1000₽</div>
+                <div>Отправляем Почтой России.</div>
+            </label>
+
+            <p>Сколько по времени ожидать отправку заказа?</p>
+            <label class="deliverText">
+                <div>После оформления, мы отправляем заказ в течение 14 рабочих дней.</div>
+            </label>
+
+            <p>Сколько по времени ожидать доставку заказа по России и миру?</p>
+            <label class="deliverText">
+                <div>Доставка по России в среднем 2-6 дней с момента отправки.</div>
+                <div>По миру 2-4 недели с момента отправки.</div>
+            </label>
+
+            <p>Как отслеживать свою посылку?</p>
+            <label class="deliverText">
+                <div>После оформления заказа, вам придет сообщение в директ/вк о</div>
+                <div>готовности посылки к отправки. Далее вам придет сообщение с</div>
+                <div>ссылкой, по которой можно отслеживать ваш заказ.</div>
+            </label>
+
+            <p>Есть ли возможность возврата?</p>
+            <label class="deliverText">
+                <div>Мы возвращаем деньги за товар только в случае брака. Если вы просто</div>
+                <div>передумали, вернуть вещь, к сожалению, невозможно.</div>
+            </label>
+        </div>
+        <a class="goBack" href="index.html">Вернуться на главную 〉</a>
+    </div>
+    <footer>
+        <div class="contacts">
+            <label class="footerTitle">Контакты</label>
+            <a href="https://vk.com/sheezysikk" class="footerLink">
+                <img src="./imgs/FooterLinkVk.png"/>
+                https://vk.com/sheezysikk
+            </a>
+            <a href="https://t.me/sheezysikk" class="footerLink">
+                <img src="./imgs/FooterLinkTlg.png" />
+                https://t.me/sheezysikk
+            </a>
+            <a href="https://www.instagram.com/sheezysikk" class="footerLink">
+                <img src="./imgs/FooterLinkInst.png"/>
+                sheezysikk
+            </a>
+        </div>
+        <div class="info">
+            <label class="footerTitle">Информация</label>
+            <a class="footerLink">Доставка</a>
+            <a class="footerLink">Обмен и возврат</a>
+        </div>
+    </footer>
+    <script src="./js/deliver.js"></script>
+</body>
+</html>
